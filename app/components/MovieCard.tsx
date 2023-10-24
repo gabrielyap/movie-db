@@ -5,12 +5,12 @@ interface MovieCardProps {
 }
 
 const MovieCard = ({title, overview, posterPath}: MovieCardProps) => {
-    const imageUrl = posterPath ? `https://image.tmdb.org/t/p/w500${posterPath}` : '/no-image-available.png'
+    const imageUrl = posterPath ? `https://image.tmdb.org/t/p/w500${posterPath}` : '/no-img.jpg'
     return (
-        <div className="bg-white rounded shadow p-4">
+        <div className="bg-slate-800 rounded shadow p-4">
             <img className="w-full h-64 rounded mb-4" src={imageUrl} alt = ""/>
-            <h2 className="text-2xl font-bold mb-2">{title}</h2>
-            <p className="text-sm text-gray-500">{overview.substring(0,150)}</p>
+            <h2 className="text-slate-100 text-2xl font-bold mb-2">{title}</h2>
+            <p className="text-slate-100 text-sm text-gray-500">{overview.substring(0,150)}</p>
         </div>
     )
 

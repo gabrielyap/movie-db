@@ -5,12 +5,11 @@ export default function Home() {
   return (
     <div className="bg-black min-h-screen">
       <Head>
-        <title>Movie Database</title>
+        <title>MyMovieList</title>
         <meta name="description" content="A simple movie database"></meta>
       </Head>
 
-      <main className="container mx-auto py-10 px-4 flex flex-col items-center justify-center">
-        <h1 className="text-4xl font-bold mb-8 text-white">Movie Database</h1>
+      <main className="flex flex-col container mx-auto py-10 px-4 items-center justify-center">
         <MovieSearch/>
       </main>
     </div>
