@@ -5,7 +5,7 @@ interface SearchBarProps {
     setSearchQuery: (a: string) => void
 }
 
-export const searchBar = ({ onSearch, setSearchQuery}: SearchBarProps) => {
+export const SearchBar = ({ onSearch, setSearchQuery}: SearchBarProps) => {
     const [query, setQuery] = useState('')
     
     const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
@@ -35,4 +35,4 @@ export const searchBar = ({ onSearch, setSearchQuery}: SearchBarProps) => {
     )
 }
 
-export default searchBar
+export default SearchBar
