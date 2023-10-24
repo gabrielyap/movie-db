@@ -8,9 +8,9 @@ const poppins = Poppins({
 
 
 export const metadata = {
-  title: 'Movie Database',
-  description: 'Movie Database',
-  keywords: ['movie', 'database']//SEO 
+  title: 'MyMovieList',
+  description: 'MyMovieList',
+  keywords: ['movie', 'list']//SEO 
 }
 
 export default function RootLayout({
